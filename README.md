@@ -35,6 +35,9 @@ bun run dev
 
 # Build
 bun run build
+
+# Preview build
+bun run preview
 ```
 
 Visit `http://localhost:3000`
