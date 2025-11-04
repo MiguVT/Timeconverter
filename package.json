@@ -1,5 +1,13 @@
 {
   "name": "timeconverter",
+  "version": "1.1.0",
+  "description": "Beautiful, fast, and ad-free timezone converter",
+  "author": "MiguVT",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiguVT/Timeconverter"
+  },
   "dependencies": {
     "@nuxtjs/color-mode": "3.5.2",
     "@vercel/analytics": "1.5.0",
@@ -14,7 +22,10 @@
     "dev": "nuxi dev",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
-    "postinstall": "nuxi prepare"
+    "postinstall": "nuxi prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "nuxi typecheck"
   },
   "type": "module",
   "devDependencies": {

@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+/* Custom animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -13,4 +14,30 @@
 
 .animate-fade-in {
   animation: fade-in 0.6s ease-out;
+}
+
+/* Performance optimization: Hardware acceleration */
+.transition-transform,
+.hover\:scale-110,
+.hover\:scale-105,
+.active\:scale-95 {
+  will-change: transform;
+}
+
+/* Accessibility: Focus visible improvements */
+*:focus-visible {
+  outline: 2px solid theme('colors.blue.500');
+  outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

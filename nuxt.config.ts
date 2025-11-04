@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
-  
+
   // SSR disabled for static site generation
   ssr: false,
 
@@ -31,8 +31,15 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Beautiful, fast, and ad-free timezone converter. Convert time between any timezone instantly. No ads, no tracking, just simple time conversion.' },
-        { name: 'keywords', content: 'timezone converter, time zone, time conversion, world clock, UTC converter' },
+        {
+          name: 'description',
+          content:
+            'Beautiful, fast, and ad-free timezone converter. Convert time between any timezone instantly. No ads, no tracking, just simple time conversion.',
+        },
+        {
+          name: 'keywords',
+          content: 'timezone converter, time zone, time conversion, world clock, UTC converter',
+        },
         { name: 'theme-color', content: '#3b82f6' },
         // Open Graph
         { property: 'og:type', content: 'website' },
