@@ -25,7 +25,7 @@
       ]
     },
     {
-      "source": "/(.+\\.(ico|png|jpg|jpeg|gif|webp|svg|woff|woff2|ttf|eot|otf))",
+      "source": "/:path*\\.(ico|png|jpg|jpeg|gif|webp|svg|woff|woff2|ttf|eot|otf)",
       "headers": [
         {
           "key": "Cache-Control",
