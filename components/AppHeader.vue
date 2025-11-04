@@ -1,5 +1,6 @@
 <template>
   <header
+    role="banner"
     class="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur"
   >
     <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">

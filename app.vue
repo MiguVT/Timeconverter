@@ -4,7 +4,7 @@
   >
     <AppHeader />
 
-    <main id="main-content" class="flex-1 flex items-center justify-center px-4 py-12">
+    <main id="main-content" role="main" class="flex-1 flex items-center justify-center px-4 py-12">
       <div class="w-full max-w-xl">
         <div class="text-center mb-8 animate-fade-in">
           <h1
