@@ -1,0 +1,23 @@
+{
+  "name": "Timeconverter",
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@vueuse/nuxt": "^14.0.0",
+    "nuxt": "^4.2.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  }
+}
