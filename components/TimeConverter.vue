@@ -56,10 +56,10 @@ const setNow = () => {
     '0',
   )}`
 
-  // Detectar la zona horaria del usuario automáticamente
+  // Auto-detect user's timezone
   const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
-  // Si la zona horaria del usuario existe en nuestra lista, usarla
+  // Use detected timezone if available in our list and not already set
   const matchedTimezone = timezones.find((tz) => tz.value === userTimezone)
   if (matchedTimezone && !fromTimezone.value) {
     fromTimezone.value = matchedTimezone.value
@@ -69,4 +69,9 @@ const setNow = () => {
 const swapTimezones = () => {
   ;[fromTimezone.value, toTimezone.value] = [toTimezone.value, fromTimezone.value]
 }
+
+// Auto-set current time on mount
+onMounted(() => {
+  setNow()
+})
 </script>
