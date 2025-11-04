@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
 
-  modules: ['@vueuse/nuxt', '@nuxtjs/color-mode'],
+  modules: ['@vueuse/nuxt', '@nuxtjs/color-mode', '@vercel/analytics/nuxt'],
 
   colorMode: {
     classSuffix: '',
