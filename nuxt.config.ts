@@ -28,11 +28,12 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#3b82f6' },
       ],
       link: [
-        {
-          rel: 'icon',
-          type: 'image/svg+xml',
-          href: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌍</text></svg>',
-        },
+        // Prefer a standard .ico favicon for broad support
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        // Keep an SVG fallback if available
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        // Apple touch icon for iOS devices
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       ],
     },
   },
