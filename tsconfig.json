@@ -1,5 +1,8 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
+  "vueCompilerOptions": {
+    "globalTypesPath": "./types/vue-global.d.ts"
+  },
   "files": [],
   "references": [
     {

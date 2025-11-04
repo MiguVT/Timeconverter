@@ -20,6 +20,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
       title: 'Timezone Converter',
       meta: [
         { charset: 'utf-8' },

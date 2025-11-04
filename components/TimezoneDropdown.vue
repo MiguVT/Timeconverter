@@ -10,6 +10,11 @@
           :placeholder="selectedTimezone ? '' : 'Search timezone...'"
           class="w-full px-3 py-2 pr-10 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
           :class="{ 'font-medium': selectedTimezone && !searchQuery }"
+          role="combobox"
+          :aria-expanded="isOpen"
+          :aria-controls="`${id}-listbox`"
+          aria-autocomplete="list"
+          :aria-activedescendant="activeDescendant"
           @focus="isOpen = true"
           @input="isOpen = true"
           @keydown="handleKeydown"
@@ -64,12 +69,17 @@
       >
         <div
           v-if="isOpen && filteredTimezones.length > 0"
+          :id="`${id}-listbox`"
           class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-xl z-50 max-h-60 overflow-y-auto"
+          role="listbox"
         >
           <button
-            v-for="tz in filteredTimezones"
+            v-for="(tz, index) in filteredTimezones"
             :key="tz.value"
+            :id="`${props.id}-option-${index}`"
             type="button"
+            role="option"
+            :aria-selected="modelValue === tz.value"
             class="w-full px-3 py-2.5 text-left hover:bg-blue-50 dark:hover:bg-blue-900/20 flex items-center gap-3 transition-colors cursor-pointer"
             :class="{ 'bg-blue-100 dark:bg-blue-900/30': modelValue === tz.value }"
             @click="selectTimezone(tz.value)"
@@ -117,8 +127,16 @@ const emit = defineEmits<{
 
 const isOpen = ref(false)
 const searchQuery = ref('')
+const activeIndex = ref(-1)
 
 const selectedTimezone = computed(() => props.timezones.find((t) => t.value === props.modelValue))
+
+const activeDescendant = computed(() => {
+  if (activeIndex.value >= 0 && activeIndex.value < filteredTimezones.value.length) {
+    return `${props.id}-option-${activeIndex.value}`
+  }
+  return undefined
+})
 
 const filteredTimezones = computed(() => {
   const search = searchQuery.value.toLowerCase()
