@@ -1,2 +1,6 @@
+# Allow all crawlers
 User-Agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://time.miguvt.com/sitemap.xml

@@ -16,5 +16,16 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "tailwindCSS.experimental.classRegex": [["class:\\s*['\"`]([^'\"`]*)['\"`]", "([^'\"`]*)"]]
+  "tailwindCSS.experimental.classRegex": [["class:\\s*['\"`]([^'\"`]*)['\"`]", "([^'\"`]*)"]],
+  "cSpell.words": [
+    "changefreq",
+    "googlebot",
+    "lastmod",
+    "Migu",
+    "nuxt",
+    "nuxtjs",
+    "urlset",
+    "vercel",
+    "vueuse"
+  ]
 }

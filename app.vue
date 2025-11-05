@@ -8,7 +8,7 @@
       <div class="w-full max-w-xl">
         <div class="text-center mb-8 animate-fade-in">
           <h1
-            class="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent"
+            class="text-4xl font-bold mb-2 bg-linear-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent"
           >
             Timezone Converter
           </h1>
