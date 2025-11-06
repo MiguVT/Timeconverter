@@ -9,11 +9,9 @@
     <div
       v-if="result"
       :key="result"
-      class="relative overflow-hidden p-6 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 dark:from-blue-900/20 dark:via-cyan-900/20 dark:to-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800 shadow-lg"
+      class="relative overflow-hidden p-6 bg-linear-to-br from-blue-50 via-cyan-50 to-blue-50 dark:from-blue-900/20 dark:via-cyan-900/20 dark:to-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800 shadow-lg"
     >
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-cyan-400/10 animate-pulse"
-      />
+      <div class="absolute inset-0 bg-linear-to-r from-blue-400/10 to-cyan-400/10 animate-pulse" />
       <div class="relative">
         <p
           class="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-2 text-center uppercase tracking-wide"

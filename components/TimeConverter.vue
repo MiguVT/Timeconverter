@@ -17,7 +17,7 @@
           @click="swapTimezones"
         >
           <svg
-            class="w-5 h-5 rotate-0 group-hover:rotate-180 transition-transform duration-300 md:rotate-90 md:group-hover:rotate-[270deg]"
+            class="w-5 h-5 rotate-0 group-hover:rotate-180 transition-transform duration-300 md:rotate-90 md:group-hover:rotate-270"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
