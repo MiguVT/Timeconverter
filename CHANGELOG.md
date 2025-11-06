@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+> Changes made in docs (README and SECURITY) isn't versioned here, its not directly related to the app functionality.
+
 ## [1.1.0] - 2025-11-06
 
 _Some of these changes were already in prod but I forgot to document them, oops!_
