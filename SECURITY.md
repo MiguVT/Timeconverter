@@ -15,7 +15,7 @@ Instead, please report security vulnerabilities using one of these methods:
 
 ### About This Project
 
-Timeconverter is a simple, client-side time conversion tool. Due to its straightforward nature and minimal attack surface, serious security vulnerabilities are unlikely but not impossible. We still appreciate any security reports to ensure the safety of our users.
+Timeconverter is a simple, client-side time conversion tool. Due to its straightforward nature, serious security vulnerabilities are unlikely - but not impossible. Still appreciate any reports to keep things safe for users.
 
 ### What to Include
 
@@ -49,11 +49,11 @@ We recommend always using the latest version of Timeconverter.
 
 ## 🔐 Security Best Practices
 
-When using Timeconverter:
+When using or deploying Timeconverter:
 
-- Keep your dependencies up to date (PIN your versions, avoid using `latest`, if a user compromises your dependencies, they may compromise your app)
-- Use HTTPS when deploying (Not really necessary for a client-side app, they won't have anything sensitive, but still a good practice)
-- Follow our deployment guidelines in the README
+- Keep your dependencies up to date (pin versions, don't use `latest` - if someone compromises a dependency, they compromise your app)
+- Use HTTPS when deploying (not critical for a client-side app with no sensitive data, but still good practice)
+- Follow the deployment guidelines in the README
 - Report any suspicious behavior
 
 ## 📜 Security Update Policy
@@ -65,8 +65,8 @@ As a solo-maintained project, I don't have fixed SLAs, but my approach is:
 
 ## 🙏 Thank You
 
-I appreciate the security research community and users who help keep Timeconverter safe. Thank you for your patience and for helping protect our users!
+Thanks to the security research community and anyone who helps keep Timeconverter safe. Your patience and help protecting users is appreciated!
 
 ---
 
-For general questions or support, please use [GitHub Discussions](https://github.com/MiguVT/Timeconverter/discussions) or open an issue.
+For general questions or support, use [GitHub Discussions](https://github.com/MiguVT/Timeconverter/discussions) or open an issue.
