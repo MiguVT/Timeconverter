@@ -4,25 +4,25 @@ A **simple, fast, and clean** timezone converter. No bloat, no ads, no tracking.
 
 ## Why?
 
-I searched for a simple timezone converter tool online. What I found:
+I needed a simple timezone converter. Googled it. What I found:
 
-- ❌ Complex APIs that require setup (And some simple ones are just APIs, we really don't need an API for this)
-- ❌ Websites full of ads and trackers
+- ❌ Complex APIs that require setup (seriously, we don't need an API for this)
+- ❌ Sites plastered with ads and trackers
 - ❌ Slow, cluttered interfaces
-- ❌ Hidden malware and spam
+- ❌ Sketchy downloads with malware
 
-I built this to prove you don't need any of that. Just a **clean, functional tool** that works.
+So I built this. No BS, just a **clean tool** that works.
 
 ## ✨ Features
 
-- **🌓 Smart Dark Mode** - System, Light, or Dark theme
+- **🌓 Dark Mode** - System, light, or dark theme
 - **🔍 70+ Timezones** - All major cities worldwide
-- **🌐 Multi-Language Search** - Find timezones in English, Spanish, and more
-- **⏰ Auto-Detect** - Instantly detect your current timezone
-- **🔄 Swap Timezones** - One-click timezone swapping
-- **📱 Fully Responsive** - Works on any device with a web browser, including phones, tablets, desktops, and even unconventional devices (e.g., Nintendo 2DS, though not tested).
-- **⚡ Ultra-Fast** - No tracking, no analytics, no bloat
-- **🎨 Beautiful UI** - Modern design with smooth animations
+- **🌐 Multi-Language Search** - Search in English, Spanish, and more
+- **⏰ Auto-Detect** - Finds your timezone automatically
+- **🔄 Quick Swap** - One-click timezone swapping
+- **📱 Responsive** - Works on phones, tablets, desktops (probably works on a Nintendo 2DS too, haven't tested though)
+- **⚡ Fast** - No tracking, no analytics, no bloat
+- **🎨 Clean UI** - Modern design with smooth animations
 
 ## 🚀 Quick Start
 
@@ -102,4 +102,4 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) 
 
 ---
 
-**Made simple. Made clean. Made for you.** ✨
+Built with ☕ and frustration with existing timezone converters.

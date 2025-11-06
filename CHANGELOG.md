@@ -2,39 +2,49 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.1.0] - 2025-11-06
+
+_Some of these changes were already in prod but I forgot to document them, oops!_
 
 ### Added
 
-- Professional accessibility improvements (WCAG 2.1 Level AA compliant)
-- `aria-hidden` attributes for decorative SVG icons
-- Skip to main content functionality with `id="main-content"`
-- Auto-detection of user timezone on page load
-- Enhanced meta tags for better SEO (Open Graph, Twitter Card)
-- Security headers in Vercel configuration
+- SEO improvements:
+  - JSON-LD structured data for better search indexing
+  - Canonical URLs to prevent duplicate content
+  - Sitemap.xml for search engines
+  - Author and publisher meta tags
+  - Mobile PWA meta tags
+  - Twitter Card (no image)
+  - Better robots directives
+- Accessibility improvements (now WCAG 2.1 AA compliant):
+  - `aria-hidden` for decorative icons
+  - Skip to main content link
+  - Reduced motion support
+  - Hardware acceleration for smoother animations
+- Auto-detect user's timezone on page load
 - VSCode workspace settings and recommended extensions
-- ESLint and Prettier configuration files
-- Reduced motion support for accessibility
-- Hardware acceleration hints for better performance
+- ESLint and Prettier configs
 
 ### Changed
 
-- Improved semantic HTML structure (h1 instead of h2 in header)
-- Enhanced ARIA labels with more descriptive text
-- Better color mode cycling with improved accessibility
-- Optimized CSS with performance improvements
-- Updated build configuration for better code splitting
-- Enhanced README with deployment instructions
+- Refactored components to use Vue 3.5's `defineModel` (so much cleaner than props/emit!)
+- Updated `compatibilityDate` to 2025-11-05
+- Better semantic HTML structure
+- Improved ARIA labels for screen readers
+- Optimized CSS and build config
+- Modern Tailwind classes (`flex-shrink-0` → `shrink-0`)
+- More SEO keywords
 
 ### Fixed
 
-- Main landmark accessibility issue
-- ARIA attributes for combobox pattern in timezone dropdowns
-- Focus visible states for better keyboard navigation
-- TypeScript type definitions for better type safety
+- Main landmark accessibility
+- Combobox ARIA attributes in timezone dropdowns
+- Keyboard navigation focus states
+- TypeScript type safety
+- Tailwind v4 `@custom-variant` linter warnings
 
 ## [1.0.0] - Initial Release
 
