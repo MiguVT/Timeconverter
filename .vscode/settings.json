@@ -27,5 +27,9 @@
     "urlset",
     "vercel",
     "vueuse"
-  ]
+  ],
+  "sonarlint.connectedMode.project": {
+    "connectionId": "miguvt",
+    "projectKey": "MiguVT_Timeconverter"
+  }
 }

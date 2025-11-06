@@ -29,7 +29,7 @@
           }}</span>
         </div>
         <button
-          v-if="modelValue && !isOpen"
+          v-if="model && !isOpen"
           type="button"
           class="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
           title="Clear selection"
@@ -87,9 +87,9 @@
             :id="`${props.id}-option-${index}`"
             type="button"
             role="option"
-            :aria-selected="modelValue === tz.value"
+            :aria-selected="model === tz.value"
             class="w-full px-3 py-2.5 text-left hover:bg-blue-50 dark:hover:bg-blue-900/20 flex items-center gap-3 transition-colors cursor-pointer"
-            :class="{ 'bg-blue-100 dark:bg-blue-900/30': modelValue === tz.value }"
+            :class="{ 'bg-blue-100 dark:bg-blue-900/30': model === tz.value }"
             @click="selectTimezone(tz.value)"
           >
             <span class="text-xl">{{ tz.flag }}</span>
@@ -98,7 +98,7 @@
               <div class="text-xs text-gray-500 dark:text-gray-400 truncate">{{ tz.country }}</div>
             </div>
             <svg
-              v-if="modelValue === tz.value"
+              v-if="model === tz.value"
               class="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0"
               fill="none"
               stroke="currentColor"
@@ -125,20 +125,17 @@ import type { Timezone } from '~/types'
 interface Props {
   id: string
   label: string
-  modelValue: string
   timezones: Timezone[]
 }
 
 const props = defineProps<Props>()
-const emit = defineEmits<{
-  'update:modelValue': [value: string]
-}>()
+const model = defineModel<string>()
 
 const isOpen = ref(false)
 const searchQuery = ref('')
 const activeIndex = ref(-1)
 
-const selectedTimezone = computed(() => props.timezones.find((t) => t.value === props.modelValue))
+const selectedTimezone = computed(() => props.timezones.find((t) => t.value === model.value))
 
 const activeDescendant = computed(() => {
   if (activeIndex.value >= 0 && activeIndex.value < filteredTimezones.value.length) {
@@ -159,13 +156,13 @@ const filteredTimezones = computed(() => {
 })
 
 const selectTimezone = (value: string) => {
-  emit('update:modelValue', value)
+  model.value = value
   isOpen.value = false
   searchQuery.value = ''
 }
 
 const clearSelection = () => {
-  emit('update:modelValue', '')
+  model.value = ''
   searchQuery.value = ''
   isOpen.value = true
 }
