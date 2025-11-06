@@ -99,7 +99,7 @@
             </div>
             <svg
               v-if="model === tz.value"
-              class="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0"
+              class="w-5 h-5 text-blue-600 dark:text-blue-400 shrink-0"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
